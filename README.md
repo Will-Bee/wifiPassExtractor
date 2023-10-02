@@ -25,6 +25,8 @@ Also there is my old af python script doing the same stuff, but its more comfort
 
 Run that script as admin (Let me know if you find a way to run as non admin user)
 
+Use only with permition of device owners :D
+
 All passwords will appear, some may fail bcs some encryption shit
 ## Author
 
