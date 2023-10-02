@@ -19,6 +19,8 @@ written in GO lang
 ```
 
 Easy af
+
+Also there is my old af python script doing the same stuff, but its more comfortable to have like exe file you can run from some small usb
 ## Usage
 
 Run that script as admin (Let me know if you find a way to run as non admin user)
