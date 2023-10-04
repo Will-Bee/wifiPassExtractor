@@ -34,7 +34,9 @@ written in GO lang
 
 Easy af
 
-Also there is my old af python script doing the same stuff, but its more comfortable to have like exe file you can run from some small usbRun that script as admin (Let me know if you find a way to run as non admin user)
+Also there is my old af python script doing the same stuff, but its more comfortable to have like exe file you can run from some small usb
+
+Run that script as admin (Let me know if you find a way to run as non admin user)
 
 All passwords will appear, some may fail bcs some encryption shit
 ## Author
