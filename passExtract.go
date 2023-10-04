@@ -13,17 +13,13 @@ func Getpass(SSID string) string {
 
 	password := ""
 
-	cGreen := "\033[32m"
-	reset := "\033[0m"
-	cPurple := "\033[35m"
-
 	SSID = strings.Replace(SSID, "\r", "", -1)
 
 	out, err := exec.Command("cmd", "/C", "netsh wlan show profile "+strconv.Quote(SSID)+" key=clear").Output()
 	if err != nil {
 		// fmt.Println(err)
 		errorCounter++
-		return "\033[31m--ENCODING ERROR--\033[0m"
+		return cRed + "--ENCODING ERROR--" + reset
 	}
 
 	out_Array := strings.Split(string(out), "\n")

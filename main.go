@@ -4,6 +4,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -14,7 +15,38 @@ var successCounter int = 0
 
 var filename_str string = ""
 
+var colours bool = false
+
+var cRed string = "\033[31m"
+var cGreen string = "\033[32m"
+var cYellow string = "\033[33m"
+var cBlue string = "\033[34m"
+var cPurple string = "\033[35m"
+var cCyan string = "\033[36m"
+var cWhite string = "\033[37m"
+var reset string = "\033[0m"
+
 func main() {
+
+	args := os.Args[1:]
+
+	if len(args) > 0 {
+
+		if "-c" == args[0] {
+			colours = true
+		}
+	}
+
+	if colours == false {
+		cRed = ""
+		cGreen = ""
+		cYellow = ""
+		cBlue = ""
+		cPurple = ""
+		cCyan = ""
+		cWhite = ""
+		reset = ""
+	}
 
 	SSID_Raw := getSSID_Raw()
 	// fmt.Println(SSID_Raw)
