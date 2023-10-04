@@ -20,5 +20,6 @@ func PrintWifiDetails(SSID string, password string) {
 func Outro() {
 	fmt.Println(cGreen+"SUCCESS: ", reset, successCounter, "/", wifiCounter)
 	fmt.Println(cRed+"ERRORS: ", reset, errorCounter)
-	fmt.Scan()
+	fmt.Scanln()
+	fmt.Println("exiting...")
 }
