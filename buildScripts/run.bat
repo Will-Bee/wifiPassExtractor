@@ -1,0 +1,1 @@
+go run ../main.go ../passExtract.go ../GUI.go
