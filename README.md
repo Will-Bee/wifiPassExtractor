@@ -15,17 +15,26 @@ written in GO lang
 ### Build
 
 ```bash
-  go build .\main.go .\passExtract.go .\GUI.go
+  cd buildScript
+  build.bat
 ```
+
+### Run that shi.
+
+```bash
+  main.exe
+```
+
+### Run that shi. but with colors
+
+```bash
+  main.exe -c
+```
+
 
 Easy af
 
-Also there is my old af python script doing the same stuff, but its more comfortable to have like exe file you can run from some small usb
-## Usage
-
-Run that script as admin (Let me know if you find a way to run as non admin user)
-
-Use only with permition of device owners :D
+Also there is my old af python script doing the same stuff, but its more comfortable to have like exe file you can run from some small usbRun that script as admin (Let me know if you find a way to run as non admin user)
 
 All passwords will appear, some may fail bcs some encryption shit
 ## Author
