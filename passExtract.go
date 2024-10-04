@@ -19,7 +19,7 @@ func Getpass(SSID string) string {
 	if err != nil {
 		// fmt.Println(err)
 		errorCounter++
-		return cRed + "--ENCODING ERROR--" + reset
+		return cRed + "[ENCODING ERROR]" + reset
 	}
 
 	out_Array := strings.Split(string(out), "\n")
@@ -34,8 +34,8 @@ func Getpass(SSID string) string {
 	successCounter++
 
 	if password == "" {
-		return cGreen + "--NO PASSWORD--" + reset
+		return cGreen + "[NO PASS]" + reset
 	}
 
-	return cPurple + password + reset
+	return cCyan + password + reset
 }

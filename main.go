@@ -25,6 +25,10 @@ var cPurple string = "\033[35m"
 var cCyan string = "\033[36m"
 var cWhite string = "\033[37m"
 var reset string = "\033[0m"
+var cSSID string = ""
+
+// create lix of strings
+var failedSSID []string
 
 func main() {
 
